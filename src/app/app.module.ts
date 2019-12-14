@@ -9,11 +9,8 @@ import { AngularMaterialModule } from './material.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './shared/api.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
-// import the feature module here so you can add it to the imports array below
-import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
 
 @NgModule({
   declarations: [
@@ -27,10 +24,7 @@ import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard
     BrowserModule,
     AppRoutingModule,
     AngularMaterialModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    FormsModule,
-    CustomerDashboardModule 
+    BrowserAnimationsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],
